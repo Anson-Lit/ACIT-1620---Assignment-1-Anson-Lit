@@ -1,12 +1,3 @@
-/* use grid
-
-Take better notes will be 1 item
-My notes will be another
-"main" section will be another
-    flexbox to style stuff inside?
-Keep in touch will be another.
-    use flexbox to style logo?*/
-
 .grid-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -32,4 +23,16 @@ Keep in touch will be another.
 .footing {
     background-color: brown;
     grid-column: 1/-1;
+}
+
+.center-grid-item {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.center-textarea {
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
