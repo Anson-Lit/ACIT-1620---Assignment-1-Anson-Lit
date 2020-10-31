@@ -1,0 +1,35 @@
+/* use grid
+
+Take better notes will be 1 item
+My notes will be another
+"main" section will be another
+    flexbox to style stuff inside?
+Keep in touch will be another.
+    use flexbox to style logo?*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+}
+
+.heading {
+    background-color: brown;
+    grid-column: 1/-1;
+}
+
+.notes {
+    background-color: aqua;
+    grid-column: 1/1;
+}
+
+.Placeholder {
+    background-color: green;
+    grid-column: 2/-1;
+}
+
+.footing {
+    background-color: brown;
+    grid-column: 1/-1;
+}
