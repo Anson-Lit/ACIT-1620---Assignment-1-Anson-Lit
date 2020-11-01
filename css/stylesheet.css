@@ -1,71 +1,82 @@
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-row-gap: 15px;
-    grid-column-gap: 15px;
+    grid-template-columns: 1fr 4fr;
+    grid-row-gap: 0.8em;
+    grid-column-gap: 0.8em;
+    width: 98vw;
+    height: 97vh;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
-.heading {
-    background-color: brown;
+header {
+    background-color: #53A2BE;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #C49E85;
     grid-column: 1/-1;
 }
 
 .notes {
-    background-color: aqua;
+    background-color: #57737A;
     grid-column: 1/1;
 }
 
 .Placeholder {
-    background-color: lightpink;
+    background-color: #F4EDEA;
     grid-column: 2/-1;
+}
+
+.textbox {
     display: flex;
-    justify-content: space-evenly;
-}
-
-.footing {
-    background-color: brown;
-    grid-column: 1/-1;
-}
-
-.center-grid-item {
     justify-content: center;
-    align-items: center;
-    display: flex;
 }
 
+.textbox-child {
+    width: 85%;
+    height: 85%;
+}
 
-/* .center-textarea {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-} */
-
-
-/* .mytextbox {
-    grid-column: 1/-1;
-    grid-row: 2/3;
-    margin: 15px;
-} */
+button {
+    border-radius: 1em;
+    color: white;
+    padding: 1em 1em;
+}
 
 .button_1 {
     background-color: green;
-    border-radius: 12px;
-    color: white;
 }
 
 .button_2 {
     background-color: black;
-    border-radius: 12px;
-    color: white;
 }
 
 .button_3 {
     background-color: green;
-    border-radius: 12px;
-    color: white;
+    margin-top: 2em;
 }
 
 .button_4 {
     background-color: red;
-    border-radius: 12px;
-    color: white;
+    margin-top: 2em;
+}
+
+.spaced-between {
+    justify-content: space-between;
+    display: flex;
+    margin: 2em;
+}
+
+.spaced-center {
+    justify-content: center;
+    display: flex;
+}
+
+.footer-container {
+    justify-content: center;
+    display: flex;
 }
