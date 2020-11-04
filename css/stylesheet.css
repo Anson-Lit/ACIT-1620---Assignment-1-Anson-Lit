@@ -3,13 +3,12 @@
     grid-template-columns: 1fr 4fr;
     grid-row-gap: 0.8em;
     grid-column-gap: 0.8em;
-    width: 98vw;
-    height: 97vh;
+    height: 98vh;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
 header {
-    background-color: #53A2BE;
+    background-color: #5C80BC;
     grid-column: 1/-1;
     display: flex;
     justify-content: center;
@@ -17,28 +16,30 @@ header {
 }
 
 footer {
-    background-color: #C49E85;
+    background-color: #9AA899;
     grid-column: 1/-1;
 }
 
 .notes {
-    background-color: #57737A;
+    background-color: #BD8B9C;
     grid-column: 1/1;
 }
 
 .Placeholder {
-    background-color: #F4EDEA;
+    background-color: #4B8F8C;
     grid-column: 2/-1;
 }
 
 .textbox {
     display: flex;
     justify-content: center;
+    height: 30vh;
 }
 
 .textbox-child {
     width: 85%;
     height: 85%;
+    border-radius: 0.8em;
 }
 
 button {
@@ -57,18 +58,18 @@ button {
 
 .button_3 {
     background-color: green;
-    margin-top: 2em;
+    margin-top: 4em;
 }
 
 .button_4 {
     background-color: red;
-    margin-top: 2em;
+    margin-top: 4em;
 }
 
 .spaced-between {
     justify-content: space-between;
     display: flex;
-    margin: 2em;
+    margin: 3em;
 }
 
 .spaced-center {
