@@ -20,8 +20,6 @@ function changeThemes() {
 }
 
 themeBtn.addEventListener("click", changeThemes)
-    //changes theme
-    //class list toggle?
 
 function hide() {
     cancelBtn.classList.toggle("hidden-style")
@@ -42,3 +40,21 @@ function showAndClear() {
 }
 
 newNoteBtn.addEventListener("click", showAndClear)
+
+saveBtn.addEventListener("click", saveInput)
+
+function saveInput() {
+    let tempObject = { title: null, body: null }
+    if (textBox.value !== "") {
+        x = textBox.value.split('\n')
+        tempObject.title = x[0]
+        let y = ""
+        for (items of x) {
+            y += items + " "
+        }
+        tempObject.body = y
+        notesArray.push(tempObject)
+    }
+}
+
+let notesArray = [{ title: "note one", body: "some text 1" }, { title: "note two", body: "some text 2" }]
