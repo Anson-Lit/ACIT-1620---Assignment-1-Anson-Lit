@@ -41,7 +41,6 @@ function showAndClear() {
 
 newNoteBtn.addEventListener("click", showAndClear)
 
-saveBtn.addEventListener("click", saveInput)
 
 function saveInput() {
     let tempObject = { title: null, body: null }
@@ -54,7 +53,35 @@ function saveInput() {
         }
         tempObject.body = y
         notesArray.push(tempObject)
+        newListItem()
     }
 }
 
-let notesArray = [{ title: "note one", body: "some text 1" }, { title: "note two", body: "some text 2" }]
+let notesArray = [{ title: "Note one", body: "some text 1" }, { title: "Note two", body: "some text 2" }]
+saveBtn.addEventListener("click", saveInput)
+
+function newListItem() {
+    let x = document.createElement("li")
+    length = notesArray.length - 1
+    let y = document.createTextNode(notesArray[length].title)
+    x.appendChild(y)
+    document.querySelector("ul").appendChild(x)
+}
+
+
+let list_items = document.querySelector("ul")
+console.log(list_items)
+list_items.addEventListener("click", hello)
+
+function hello(evt) {
+
+    x = evt.target.innerText
+    console.log(x)
+    for (let i = 0; i < notesArray.length; i++) {
+        // notesArray[i].title
+        if (x == notesArray[i].title) {
+            textBox.value = notesArray[i].body
+        }
+    }
+
+}
