@@ -85,3 +85,7 @@ button {
 .hidden-style {
     visibility: hidden;
 }
+
+.darkColor {
+    background-color: grey;
+}
