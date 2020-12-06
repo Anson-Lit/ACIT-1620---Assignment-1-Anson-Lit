@@ -60,7 +60,6 @@ function saveInput() {
         y = y.replace(tempObject.title, '');
         tempObject.body = y;
         notesArray.push(tempObject);
-        console.log(notesArray);
         newListItem();
     }
 }
